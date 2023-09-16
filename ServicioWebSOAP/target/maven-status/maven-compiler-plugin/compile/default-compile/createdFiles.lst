@@ -1,0 +1,6 @@
+com/registraduria/service/impl/CiudadanoServiceImpl.class
+com/registraduria/entity/Ciudadano.class
+com/registraduria/service/CiudadanoService.class
+com/registraduria/main/ServicePublisher.class
+com/registraduria/util/XmlUtil.class
+com/registraduria/App.class
