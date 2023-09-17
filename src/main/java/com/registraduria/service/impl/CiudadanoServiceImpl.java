@@ -11,11 +11,13 @@ import javax.jws.WebService;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.Marshaller;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
+
 
 @WebService(endpointInterface = "com.registraduria.service.CiudadanoService")
 public class CiudadanoServiceImpl implements CiudadanoService {
