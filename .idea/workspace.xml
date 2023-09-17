@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97421a8a-27e1-4bb8-9aa0-8d4ff7029b09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/src/main/java/com/registraduria/main/ServicePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/src/main/java/com/registraduria/main/ServicePublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/src/main/java/com/registraduria/service/CiudadanoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/src/main/java/com/registraduria/service/CiudadanoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/src/main/webapp/WEB-INF/sun-jaxws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/src/main/webapp/WEB-INF/sun-jaxws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT/WEB-INF/classes/com/registraduria/main/ServicePublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT/WEB-INF/classes/com/registraduria/main/ServicePublisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT/WEB-INF/classes/com/registraduria/service/CiudadanoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT/WEB-INF/classes/com/registraduria/service/CiudadanoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT/WEB-INF/sun-jaxws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/target/ServicioWebSOAP-1.0-SNAPSHOT/WEB-INF/sun-jaxws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/target/classes/com/registraduria/main/ServicePublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/target/classes/com/registraduria/main/ServicePublisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicioWebSOAP/target/classes/com/registraduria/service/CiudadanoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ServicioWebSOAP/target/classes/com/registraduria/service/CiudadanoService.class" afterDir="false" />
-    </list>
+    <list default="true" id="97421a8a-27e1-4bb8-9aa0-8d4ff7029b09" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2VKi7NUz92N2HofMTS89ecXZJg0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,7 +25,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "61459684",
     "last_opened_file_path": "/Users/danielfajardo/Documents/Github/ServicioWebSOAP",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",

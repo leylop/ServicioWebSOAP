@@ -22,7 +22,7 @@ import java.nio.charset.StandardCharsets;
 @WebService(endpointInterface = "com.registraduria.service.CiudadanoService")
 public class CiudadanoServiceImpl implements CiudadanoService {
 
-    private static final String CONNECTION_STRING = "sp=racwd&st=2023-09-17T04:17:23Z&se=2023-09-17T12:17:23Z&sv=2022-11-02&sr=c&sig=y2pas2voAvon4J4l4pIgtudxUoL6DJWS4K1TnTIA4tU%3D";
+    private static final String CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=sendmenssagestrigger;AccountKey=9jdd+tniN9/lGlg7jCACKWbL15AyxXNGbo1GRyaDIOhg8YfIaLPtAdvhfGApvLWkLmM8VqZMH3Aa+ASt2x/1Hw==;EndpointSuffix=core.windows.net";
     private static final String CONTAINER_NAME = "output-service-soap";
 
     private BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(CONNECTION_STRING).buildClient();
@@ -64,20 +64,12 @@ public class CiudadanoServiceImpl implements CiudadanoService {
     }
 
     @Override
-    public String actualizarInformacion(String id, Ciudadano ciudadano) {
-        BlobClient blobClient = blobContainerClient.getBlobClient(id + ".xml");
+    public String actualizarInformacion(String client_identifier, String ciudadanoXml) {
+        BlobClient blobClient = blobContainerClient.getBlobClient(client_identifier + ".xml");
 
         if (blobClient.exists()) {
             try {
-                // Convertir el objeto Ciudadano a XML
-                StringWriter writer = new StringWriter();
-                JAXBContext context = JAXBContext.newInstance(Ciudadano.class);
-                Marshaller marshaller = context.createMarshaller();
-                marshaller.marshal(ciudadano, writer);
-                String ciudadanoAsXml = writer.toString();
-
-                // Escribir el XML en Azure Blob Storage
-                blobClient.upload(new ByteArrayInputStream(ciudadanoAsXml.getBytes(StandardCharsets.UTF_8)), ciudadanoAsXml.length(), true);
+                blobClient.upload(new ByteArrayInputStream(ciudadanoXml.getBytes(StandardCharsets.UTF_8)), ciudadanoXml.length(), true);
 
                 return "Información actualizada con éxito en Azure Blob Storage";
             } catch (Exception e) {

@@ -47,12 +47,6 @@
     </dependency>
 
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>1.7.30</version>
-    </dependency>
-
-    <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
       <version>2.3.1</version>
@@ -62,9 +56,16 @@
       <groupId>com.azure</groupId>
       <artifactId>azure-storage-blob</artifactId>
       <version>12.24.0</version>
-  </dependency>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>2.5.4</version>
+    </dependency>
 
   </dependencies>
+
   <build>
     <plugins>
       <!-- Plugin para especificar la versión de Java -->
@@ -86,6 +87,16 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+              <mainClass>com.registraduria.App</mainClass>
+          </configuration>
+      </plugin>
+
     </plugins>
   </build>
 </project>
