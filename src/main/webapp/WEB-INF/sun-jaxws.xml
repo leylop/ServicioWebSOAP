@@ -4,5 +4,5 @@
     <endpoint
             name="CiudadanoService"
             implementation="com.registraduria.service.impl.CiudadanoServiceImpl"
-            url-pattern="/ws/ciudadano"/>
+            url-pattern="/servicioregistraduria"/>
 </endpoints>

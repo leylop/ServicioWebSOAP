@@ -22,7 +22,7 @@
 
     <servlet-mapping>
         <servlet-name>WSServlet</servlet-name>
-        <url-pattern>/ws/*</url-pattern>
+        <url-pattern>/servicioregistraduria/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
