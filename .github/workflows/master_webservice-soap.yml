@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - webservice-soap
+name: Build and deploy WAR app to Azure Web App - webservice-soap
 
 on:
   push:
@@ -50,4 +50,4 @@ jobs:
           app-name: 'webservice-soap'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CFF32F594E7C4551911AF4EC1015A338 }}
-          package: '*.jar'
+          package: '*.war'
