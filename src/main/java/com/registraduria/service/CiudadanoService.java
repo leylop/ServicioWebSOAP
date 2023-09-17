@@ -6,6 +6,6 @@ import javax.jws.WebService;
 
 @WebService
 public interface CiudadanoService {
-    String registrarCiudadano(Ciudadano ciudadano);
+    String registrarCiudadano(String ciudadanoXml);
     String actualizarInformacion(String id, Ciudadano ciudadano);
 }
