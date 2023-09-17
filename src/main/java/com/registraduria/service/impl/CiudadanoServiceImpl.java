@@ -3,15 +3,19 @@ package com.registraduria.service.impl;
 import com.registraduria.entity.Ciudadano;
 import com.registraduria.service.CiudadanoService;
 import com.registraduria.util.XmlUtil;
+import com.azure.storage.blob.BlobClient;
+import com.azure.storage.blob.BlobContainerClient;
+import com.azure.storage.blob.BlobServiceClient;
+import com.azure.storage.blob.BlobServiceClientBuilder;
 import javax.jws.WebService;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.nio.charset.StandardCharsets;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 
 @WebService(endpointInterface = "com.registraduria.service.CiudadanoService")
 public class CiudadanoServiceImpl implements CiudadanoService {
