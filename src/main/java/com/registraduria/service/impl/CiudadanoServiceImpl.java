@@ -18,7 +18,6 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
-
 @WebService(endpointInterface = "com.registraduria.service.CiudadanoService")
 public class CiudadanoServiceImpl implements CiudadanoService {
 
